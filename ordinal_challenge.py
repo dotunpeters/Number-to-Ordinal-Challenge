@@ -1,6 +1,7 @@
 
 
 def check(str_number):
+    #return correxponding ordinal prefix
     if str_number == "1":
         return "st"
     elif str_number == "2":
@@ -23,6 +24,8 @@ def numberToOrdinal(number):
 
 def main():
     value = input("number: ")
+
+    #handling none integers input 
     try:
         value = abs(int(value))
     except ValueError:
